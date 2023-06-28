@@ -26,7 +26,7 @@ def measure_memory_usage(func, *args, **kwargs):
     return memory_usage
 
 def plot_complexity():
-    sizes = [100, 200, 300, 400, 500]  # Розміри масивів
+    sizes = [1000, 2000, 3000, 4000, 5000]  # Розміри масивів
     bubble_sort_times = []
     selection_sort_times = []
     insertion_sort_times = []
@@ -92,7 +92,7 @@ def plot_complexity():
     plt.show()
 
 def main():
-    sizes = [100, 200, 300, 400, 500]  # Розміри масивів
+    sizes = [1000, 2000, 3000, 4000, 5000]  # Розміри масивів
 
     for size in sizes:
         array = generate_random_array(size)
